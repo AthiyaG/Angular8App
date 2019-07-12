@@ -1,0 +1,19 @@
+<p>View All Impact Sheets</p>
+<ul *ngFor = "let is of allIS">
+    <li>
+        id : {{is.id}}
+    </li>
+    <li>
+        project : {{is.project}}
+    </li>
+    <li>
+        bodytype : {{is.bodytype}}
+    </li>
+    <li>
+        domain : {{is.domain}}
+    </li>
+    <li>
+        impact : {{is.impact}}
+    </li>
+</ul>
+<button (click)="getIS($event)" value="Refresh">Refresh</button>
